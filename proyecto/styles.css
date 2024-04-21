@@ -1,0 +1,289 @@
+body {
+  background-color: rgba(0, 255, 191, 0.471);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: rgba(128, 128, 128);
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 0 3px 3px #1a1a1a;
+  width: 100%;
+}
+
+.navbar-puntos {
+  margin: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.space-navbar {
+  height: 55px;
+}
+
+.nav-item {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botones {
+  background-color: #44444484;
+}
+
+.zonitas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+  position: relative;
+}
+
+.zonas {
+  margin-top: 200px;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  overflow: hidden;
+}
+
+.boton-icono-izquierda,
+.boton-icono-derecha {
+  background-color: #1a9b0f;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.boton-icono-derecha {
+  border-radius: 10px 0 0 10px;
+  margin-left: 357.5px;
+}
+.boton-icono-izquierda {
+  border-radius: 0 10px 10px 0;
+}
+
+.boton-icono-izquierda:hover,
+.boton-icono-derecha:hover {
+  background-color: #0d6e0f;
+}
+
+.boton-icono-derecha::before {
+  content: attr(data-icon);
+}
+.boton-icono-izquierda::before {
+  content: attr(data-icon);
+}
+
+.zonas h2 {
+  color: rgba(252, 2, 2, 0.908);
+  margin: 0;
+  background-color: rgba(239, 188, 22, 0.581);
+  text-align: center;
+}
+
+.subscribase {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribase h2 {
+  text-align: center;
+  color: black;
+}
+.subscribase input {
+  display: inline-block;
+  width: 400px;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #334755;
+  text-align: center;
+}
+
+.zonas h3 {
+  margin: 0;
+}
+
+.zonas-turisticas {
+  height: 300px;
+  background-image: url(./images/Acrópolis.jpg);
+  background-size: cover;
+}
+
+.detalles {
+  padding: 20px;
+}
+
+.detalles h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.nav-item:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 20px;
+  height: calc(100vh + 200px);
+}
+
+.text-content {
+  font-size: 20px;
+  width: 100%;
+  color: #444;
+}
+
+.sobre-nosotros {
+  text-align: center;
+}
+
+.nosotros {
+  cursor: pointer;
+}
+
+.sobre-nosotros .redes a {
+  text-decoration: none;
+  font-size: 40px;
+  display: inline-block;
+  color: #18385c;
+}
+
+.sobre-nosotros .color {
+  color: #18385c;
+}
+
+@media (width >= 700px) {
+  .zonas {
+    margin-top: 250px;
+    width: 600px;
+  }
+
+  .zonas-turisticas {
+    height: 450px;
+  }
+
+  .detalles h2 {
+    font: 20px;
+  }
+  .boton-icono-derecha {
+    margin-left: 457.5px;
+  }
+
+  .subscribase {
+    margin-top: 450px;
+  }
+
+  .subscribase input {
+    margin-top: px;
+  }
+}
+
+@media (width <= 530px) {
+  .zonas {
+    width: 400px;
+    margin-top: 130px;
+  }
+
+  .zonas-turisticas {
+    height: 200px;
+  }
+
+  .detalles h2 {
+    font-size: 15px;
+  }
+  .boton-icono-derecha {
+    margin-left: 257.5px;
+  }
+  .subscribase {
+    margin-top: 300px;
+  }
+}
+
+@media (width <= 410px) {
+  .nav-item {
+    padding: 4px;
+  }
+  .space-navbar {
+    height: 243px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .zonas {
+    width: 240px;
+    margin-top: -300px;
+  }
+
+  .zonas-turisticas {
+    height: 140px;
+  }
+
+  .detalles h2 {
+    font-size: 14px;
+  }
+  .boton-icono-derecha {
+    margin-left: 97.5px;
+  }
+
+  .subscribase {
+    margin-top: 50px;
+    font-size: 11px;
+  }
+  .subscribase input {
+    width: 228px;
+    font-size: 10px;
+  }
+
+  .sobre-nosotros {
+    font-size: 10px;
+  }
+}
+
+@media (width <= 350px) {
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .zonas {
+    margin-top: -50px;
+  }
+  .boton-icono-derecha {
+    margin-left: 97.5px;
+  }
+
+  .subscribase {
+    margin-top: 150px;
+    font-size: 11px;
+  }
+
+  .subscribase input {
+    font-size: 11px;
+  }
+}
