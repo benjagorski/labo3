@@ -43,6 +43,10 @@ body {
   transition: background-color 0.3s;
 }
 
+.titulo {
+  text-align: center;
+}
+
 .botones {
   background-color: #44444484;
 }
@@ -63,6 +67,27 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: absolute;
   overflow: hidden;
+}
+
+.nosotros-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 400px;
+  position: relative;
+}
+
+.informacion {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 1px solid #329b0f;
+  background-color: #26cf1782;
+}
+.informacion h2 {
+  text-align: center;
 }
 
 .boton-icono-izquierda,
@@ -103,7 +128,7 @@ body {
 }
 
 .subscribase {
-  margin-top: 350px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,6 +145,7 @@ body {
   font-size: 15px;
   padding: 10px;
   border: 1px solid #334755;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -158,6 +184,7 @@ body {
 }
 
 .sobre-nosotros {
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -175,8 +202,47 @@ body {
 .sobre-nosotros .color {
   color: #18385c;
 }
+.comentarios {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-@media (width >= 700px) {
+.comentarios h2 {
+  text-align: center;
+  color: black;
+}
+.comentarios input {
+  display: inline-block;
+  width: 400px;
+  font-size: 15px;
+  padding: 30px 0 50px 0;
+  border: 1px solid #334755;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.comenta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #f8ff26;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.comenta:hover {
+  background-color: #c9a90d;
+}
+
+@media (width >= 620px) {
   .zonas {
     margin-top: 250px;
     width: 600px;
@@ -194,15 +260,19 @@ body {
   }
 
   .subscribase {
-    margin-top: 450px;
+    margin-top: 50px;
   }
 
   .subscribase input {
-    margin-top: px;
+    margin-top: 10px;
+  }
+
+  .nosotros-info {
+    margin-top: 500px;
   }
 }
 
-@media (width <= 530px) {
+@media (width <= 500px) {
   .zonas {
     width: 400px;
     margin-top: 130px;
@@ -219,11 +289,31 @@ body {
     margin-left: 257.5px;
   }
   .subscribase {
+    margin-top: 50px;
+  }
+
+  .comentarios input {
+    padding: 15px 0 50px;
+  }
+
+  .nosotros-info {
     margin-top: 300px;
+  }
+
+  .informacion {
+    width: 400px;
+  }
+
+  .informacion h2 {
+    font-size: 17px;
+  }
+
+  .informacion h3 {
+    font-size: 13px;
   }
 }
 
-@media (width <= 410px) {
+@media (width <= 450px) {
   .nav-item {
     padding: 4px;
   }
@@ -235,9 +325,17 @@ body {
     font-size: 14px;
   }
 
+  .titulo {
+    margin-top: -100px;
+  }
+
+  .nosotros-info {
+    margin-top: 200px;
+  }
+
   .zonas {
     width: 240px;
-    margin-top: -300px;
+    margin-top: 0px;
   }
 
   .zonas-turisticas {
@@ -263,6 +361,30 @@ body {
   .sobre-nosotros {
     font-size: 10px;
   }
+
+  .comentarios {
+    margin-top: 50px;
+    font-size: 11px;
+  }
+  .comentarios input {
+    width: 250px;
+    font-size: 10px;
+  }
+  .nosotros-info {
+    margin-top: px;
+  }
+
+  .informacion {
+    width: 250px;
+  }
+
+  .informacion h2 {
+    font-size: 17px;
+  }
+
+  .informacion h3 {
+    font-size: 13px;
+  }
 }
 
 @media (width <= 350px) {
@@ -271,19 +393,66 @@ body {
     gap: 8px;
   }
 
+  .titulo {
+    margin-top: 0px;
+  }
+
   .zonas {
-    margin-top: -50px;
+    margin-top: 0px;
   }
   .boton-icono-derecha {
     margin-left: 97.5px;
   }
 
+  .sobre-nosotros {
+    font-size: 11px;
+  }
+
   .subscribase {
-    margin-top: 150px;
+    margin-top: 50px;
     font-size: 11px;
   }
 
   .subscribase input {
     font-size: 11px;
+  }
+}
+
+@media (width <= 324px) {
+  .titulo {
+    margin-top: 0px;
+  }
+
+  .zonas {
+    width: 200px;
+    margin-top: 0px;
+  }
+
+  .boton-icono-derecha {
+    margin-left: 57.5px;
+  }
+
+  .informacion h2 {
+    font-size: 15px;
+  }
+  .informacion h3 {
+    font-size: 11px;
+  }
+
+  .sobre-nosotros {
+    font-size: 10px;
+  }
+
+  .subscribase {
+    margin-top: 50px;
+    font-size: 10px;
+  }
+
+  .subscribase input {
+    font-size: 10px;
+  }
+
+  .comentarios {
+    font-size: 10px;
   }
 }
