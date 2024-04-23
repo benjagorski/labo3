@@ -18,18 +18,19 @@
     />
     <title>Turismo del Mundo</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="images/png" href="./images/icon.png" />
   </head>
   <body>
     <div class="space-navbar"></div>
     <nav class="navbar">
       <a href="./index.html" class="nav-item">Inicio</a>
-      <a href="" class="nav-item">Precios</a>
-      <a href="" class="nav-item">Eventos</a>
-      <a href="" class="nav-item">Contacto</a>
-      <a href="" class="nav-item">Login</a>
+      <a href="./index.html#zonitas" class="nav-item">Zonas</a>
+      <a href="./index.html#nosotros" class="nav-item">Nosotros</a>
+      <a href="./subcribirse.html" class="nav-item">Subscribase</a>
+      <a href="./index.html#redes" class="nav-item">Redes y Comentarios</a>
     </nav>
 
-    <h1 class="titulo">TuristicPark</h1>
+    <h1 class="titulo" id="zonitas">Turismo del Mundo</h1>
 
     <div class="zonitas">
       <section class="zonas">
@@ -38,14 +39,14 @@
         <article class="detalles">
           <h3>Acropolis (Grecia, Atenas)</h3>
         </article>
-        <div class="botones">
-          <button class="boton-icono-izquierda" data-icon="◀➖"></button>
-          <button class="boton-icono-derecha" data-icon="➖▶"></button>
+        <div class="botones" id="nosotros">
+          <a href="./index.html"><button class="boton-icono-izquierda" data-icon="◀➖"></button></a>
+          <a href="./index.html"><button class="boton-icono-derecha" data-icon="➖▶"></button></a>
         </div>
       </section>
     </div>
     <div class="nosotros-info">
-      <section class="informacion">
+      <section class="informacion" id="subscribase">
         <h2>Sobre Nosotros</h2>
         <h3>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -59,35 +60,34 @@
       </section>
     </div>
 
-    <section class="subscribase">
-      <h2>Subscribirse para mas noticias</h2>
-      <input type="text" placeholder="Ingrese su email" />
-      <button class="comenta">Enviar</button>
-    </section>
-
     <section class="sobre-nosotros" id="sobre-nosotros">
       <h2 class="titulo-color">Nuestras Redes</h2>
       <div class="nosotros">
-        <img
-          src="./images/facebook.png"
-          alt="facebook"
-          width="50"
-          height="50"
-        />
-        <img src="./images/youtube.png" alt="youtube" width="50" height="50" />
-        <img
-          src="./images/instagram.png"
-          alt="instagram"
-          width="50"
-          height="50"
-        />
+        <a href="https://www.facebook.com" target="_blank">
+          <img
+            src="./images/facebook.png"
+            alt="facebook"
+            width="50"
+            height="50"
+        /></a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="./images/youtube.png" alt="youtube" width="50" height="50"
+        /></a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img
+            src="./images/instagram.png"
+            alt="instagram"
+            width="50"
+            height="50"
+        /></a>
       </div>
     </section>
 
-    <section class="comentarios">
+    <section class="comentarios" id="redes">
       <h2>Comentarios</h2>
-      <input type="text" placeholder="Comenta" />
-      <button class="comenta">Enviar</button>
+      <form class="comentarios-form" method="get" action="./index.html" id="comentarios">
+      <input type="text" placeholder="Comenta" required/>
+      <button class="comenta-boton" type="submit">Enviar</button>
     </section>
   </body>
 </html>

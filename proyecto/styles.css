@@ -102,7 +102,7 @@ body {
 
 .boton-icono-derecha {
   border-radius: 10px 0 0 10px;
-  margin-left: 357.5px;
+  margin-left: 356px;
 }
 .boton-icono-izquierda {
   border-radius: 0 10px 10px 0;
@@ -134,6 +134,32 @@ body {
   align-items: center;
   justify-content: center;
 }
+.subscribase-contenedor {
+  background-color: #11dce3;
+  border-radius: 15px;
+}
+
+.subscribase-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribase-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 10px 0;
+  background-color: #f8ff26;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
 
 .subscribase h2 {
   text-align: center;
@@ -143,6 +169,7 @@ body {
   display: inline-block;
   width: 400px;
   font-size: 15px;
+  margin: 0 10px;
   padding: 10px;
   border: 1px solid #33475549;
   border-radius: 10px;
@@ -218,18 +245,18 @@ body {
   display: inline-block;
   width: 400px;
   font-size: 15px;
-  padding: 100px 0 50px 0;
+  padding: 10px 0 100px 0;
   border: 1px solid #33475554;
   border-radius: 15px;
   text-align: center;
 }
 
-.comenta {
+.comenta-boton {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  margin-top: 10px;
+  margin: 10px 0 30px 0;
   background-color: #f8ff26;
   border: none;
   border-radius: 50px;
@@ -237,6 +264,12 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
   position: relative;
+}
+.comentarios-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .comenta:hover {
@@ -257,7 +290,7 @@ body {
     font: 20px;
   }
   .boton-icono-derecha {
-    margin-left: 457.5px;
+    margin-left: 456px;
   }
 
   .subscribase {
@@ -270,6 +303,19 @@ body {
 
   .nosotros-info {
     margin-top: 500px;
+  }
+}
+
+@media (width <= 520px) {
+  .nav-item {
+    padding: 4px;
+  }
+  .space-navbar {
+    height: 243px;
+  }
+
+  .navbar a {
+    font-size: 14px;
   }
 }
 
@@ -287,7 +333,7 @@ body {
     font-size: 15px;
   }
   .boton-icono-derecha {
-    margin-left: 257.5px;
+    margin-left: 256px;
   }
   .subscribase {
     margin-top: 50px;
@@ -315,15 +361,9 @@ body {
 }
 
 @media (width <= 450px) {
-  .nav-item {
-    padding: 4px;
-  }
-  .space-navbar {
-    height: 243px;
-  }
-
-  .navbar a {
-    font-size: 14px;
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
   }
 
   .titulo {
@@ -347,7 +387,7 @@ body {
     font-size: 14px;
   }
   .boton-icono-derecha {
-    margin-left: 97.5px;
+    margin-left: 96px;
   }
 
   .subscribase {
@@ -389,12 +429,8 @@ body {
 }
 
 @media (width <= 350px) {
-  .navbar {
-    flex-direction: column;
-    gap: 8px;
-  }
-
   .titulo {
+    font-size: 30px;
     margin-top: 0px;
   }
 
@@ -402,7 +438,7 @@ body {
     margin-top: 0px;
   }
   .boton-icono-derecha {
-    margin-left: 97.5px;
+    margin-left: 96px;
   }
 
   .sobre-nosotros {
@@ -430,7 +466,7 @@ body {
   }
 
   .boton-icono-derecha {
-    margin-left: 57.5px;
+    margin-left: 56px;
   }
 
   .informacion h2 {
