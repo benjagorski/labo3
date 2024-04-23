@@ -44,6 +44,7 @@ body {
 }
 
 .titulo {
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -367,7 +368,7 @@ body {
   }
 
   .titulo {
-    margin-top: -100px;
+    margin-top: 100px;
   }
 
   .nosotros-info {
@@ -431,7 +432,7 @@ body {
 @media (width <= 350px) {
   .titulo {
     font-size: 30px;
-    margin-top: 0px;
+    margin-top: 100px;
   }
 
   .zonas {
